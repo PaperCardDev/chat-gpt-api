@@ -6,4 +6,6 @@ import org.jetbrains.annotations.NotNull;
 public interface ChatGptApi {
 
     @NotNull String requestAnswer(@NotNull String question) throws Exception;
+
+    @NotNull String requestAnswer(@NotNull String question, long id) throws Exception;
 }
